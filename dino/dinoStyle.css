@@ -1,0 +1,96 @@
+body {
+    background-image: url("chris.png");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+h1 {
+    position: relative;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(256, 256, 256, 0.5);
+    width: 15%;
+    margin-bottom: 50px;
+}
+
+svg {
+    margin: 75px 0 0 50px; 
+    width: 800px;
+}
+
+.hat {
+    fill: indigo;
+}
+
+.eyebrow {
+    animation: howYouDoin 2s linear infinite;
+}
+
+.pupil {
+    animation: look 2s linear infinite;
+}
+
+.spine1 {
+    animation: shiver1 2s linear infinite;
+}
+
+.spine2 {
+    animation: shiver2 2s linear infinite;
+}
+
+.spine3 {
+    animation: shiver3 2s linear infinite;
+}
+
+@keyframes howYouDoin {
+    0% {transform:translate(0, 0);}
+    70% {transform:translate(0, -10px);}
+    75%   {transform:translate(0, 10px);}
+    80%  {transform:translate(0, -10px);}
+    85% {transform:translate(0, 10px);}
+    90%   {transform:translate(0, -10px);}
+    95%  {transform:translate(0, 10px);}
+    100%   {transform:translate(0, -10px);}
+}
+
+
+@keyframes look {
+    0% {transform:translate(0, 0);}
+    25% {transform:translate(7px, 0);}
+    50% {transform:translate(7px, 0);}
+    65% {transform:translate(0, 0);}
+    100% {transform:translate(0, 0);}
+}
+
+@keyframes shiver1 {
+    0% {transform:translate(0, 0);}
+    70% {transform:translate(0, 0);}
+    75%   {transform:translate(3px, 0);}
+    80%  {transform:translate(-4px, 0);}
+    85% {transform:translate(7px, 0);}
+    90%   {transform:translate(-2px, 0);}
+    95%  {transform:translate(4px, 0);}
+    100%   {transform:translate(-5px, 0);}
+}
+
+@keyframes shiver2 {
+    0% {transform:translate(0, 0);}
+    70% {transform:translate(0, 0);}
+    75%   {transform:translate(-4px, 0);}
+    80%  {transform:translate(5px, 0);}
+    85% {transform:translate(-7px, 0);}
+    90%   {transform:translate(6px, 0);}
+    95%  {transform:translate(-4px, 0);}
+    100%   {transform:translate(5px, 0);}
+}
+
+@keyframes shiver3 {
+    0% {transform:translate(0, 0);}
+    70% {transform:translate(0, 0);}
+    75%   {transform:translate(-7px, 0);}
+    80%  {transform:translate(3px, 0);}
+    85% {transform:translate(-3px, 0);}
+    90%   {transform:translate(6px, 0);}
+    95%  {transform:translate(-5px, 0);}
+    100%   {transform:translate(4px, 0);}
+}
